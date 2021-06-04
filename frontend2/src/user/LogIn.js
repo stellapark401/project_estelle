@@ -20,7 +20,7 @@ const LogIn = () => {
             </div>
             <div className="container">
                 <button type="button" className="cancelbtn">Cancel</button>
-                <br /><br /><br /><span className="psw" style={{backgroundColor:"yellow"}}>Forgot <a href="#">password?</a></span>
+                <br /><br /><br /><span className="psw" style={{backgroundColor:"yellow"}}>        Forgot <a href="#">password?      </a></span>
             </div>
             </form>
         </div>
