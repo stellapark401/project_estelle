@@ -1,22 +1,21 @@
 import React from 'react'
-import { BrowserRouter as Router, Link } from "react-router-dom"
-import styled from 'styled-components'
-import Counter from 'counter/Counter'
-import LogIn from 'user/LogIn'
-import SignUp from 'user/SignUp'
-import UserDetail from 'user/UserDetail'
-import UserEdit from 'user/UserEdit'
-import UserList from 'user/UserList'
+import { Route } from "react-router-dom"
+import { LogIn, SignUp, UserEdit, UserList, UserDetail } from 'user/index'
+import { Counter } from 'counter/index'
+import { Home } from 'common/index'
 
 
 const App = () => {
   return (
-    <>
-      <Counter/>
-      <UserDetail/>
-      <LogIn/>
-      <SignUp/>
-    </>
+    <div>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/counter' component={ Counter } />
+      <Route exact path='/login' component={ LogIn } />
+      <Route exact path='/signup' component={ SignUp } />
+      <Route exact path='/user-edit' component={ UserEdit } />
+      <Route exact path='/user-list' component={ UserList } />
+      <Route exact path='/user-detail' component={ UserDetail } />
+    </div>
   )
 }
 
