@@ -6,6 +6,7 @@ class Housing(object):
 
     dataset = Dataset()
 
+    # Dataset's structure + DataFrame 의 model 을 생성한다.
     def new_model(self, payload):
         this = self.dataset
         this.context = './data/'
